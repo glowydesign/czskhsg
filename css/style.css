@@ -68,6 +68,7 @@ button { cursor: pointer; font-family: inherit; }
   letter-spacing: 0.03em; line-height: 1.1;
   color: var(--navy);
   white-space: nowrap;
+  flex: none;
 }
 .nav-logo-text span { color: var(--blue); display: block; font-size: 0.62rem; letter-spacing: 0.28em; font-family: var(--font-b); font-weight: 600; text-transform: uppercase; margin-top: 0.2rem; }
 
