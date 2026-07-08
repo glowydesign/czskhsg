@@ -37,6 +37,18 @@
   });
 })();
 
+/* ---- Top notice height (pushes nav down to sit below the banner) ---- */
+(function () {
+  const notice = document.getElementById('top-notice');
+  if (!notice) return;
+
+  const setHeight = () => {
+    document.documentElement.style.setProperty('--notice-h', notice.offsetHeight + 'px');
+  };
+  setHeight();
+  window.addEventListener('resize', setHeight);
+})();
+
 /* ---- Scroll reveal ---- */
 (function () {
   const obs = new IntersectionObserver((entries) => {
